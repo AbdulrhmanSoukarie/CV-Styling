@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #999999;
+}
+header div {
+  margin-left: 15rem;
+  display: inline-flex;
+}
+hgroup {
+  color: red;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.7rem;
+}
+
+.content {
+  max-width: 100%;
+  margin: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content > section {
+  padding: 20px;
+}
+.content > section {
+  padding: 20px;
+}
+
+h3::before {
+  content: "";
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: rgba(255, 0, 0, 255);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+h3 {
+  position: relative;
+  padding-bottom: 1rem;
+}
+/*--------about section ------*/
+#about h3::after {
+  content: "";
+  position: absolute;
+  min-width: 205.5%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.39);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+
+#about p {
+  margin-top: 1rem;
+}
+
+/*--------Competencies  section ------*/
+.skills {
+  margin-top: 1rem;
+}
+.skills-primary::before {
+  content: "Main";
+  font-weight: bold;
+}
+.skill {
+  margin-bottom: 0.3rem;
+}
+.skill span {
+  color: white;
+}
+.skills-primary .skill[data-skill="5"] {
+  background-color: rgba(204, 204, 204, 255);
+}
+.skills-primary .skill[data-skill="5"] span {
+  display: inline-block;
+  width: 50%;
+  padding-left: 3px;
+  background-color: rgba(255, 0, 0, 255);
+  margin: 0.3rem;
+}
+.skills-primary .skill[data-skill="3"] {
+  background-color: rgba(204, 204, 204, 255);
+}
+.skills-primary .skill[data-skill="3"] span {
+  display: inline-block;
+  width: 30%;
+  padding-left: 3px;
+  background-color: rgba(255, 0, 0, 255);
+  margin: 0.3rem;
+}
+.skills-primary .skill[data-skill="1"] {
+  background-color: rgba(204, 204, 204, 255);
+}
+.skills-primary .skill[data-skill="1"] span {
+  display: inline-block;
+  width: 7%;
+  padding-left: 3px;
+  background-color: rgba(255, 0, 0, 255);
+  margin: 0.3rem;
+}
+/******************----*****************/
+.skills-secondary::before {
+  content: "Other";
+  font-weight: bold;
+}
+.skills-secondary .skill[data-skill="9"] {
+  background-color: rgba(204, 204, 204, 255);
+}
+.skills-secondary .skill[data-skill="9"] span {
+  display: inline-block;
+  width: 90%;
+  padding-left: 3px;
+  background-color: rgba(255, 0, 0, 255);
+  margin: 0.3rem;
+}
+.skills-secondary .skill[data-skill="5"] {
+  background-color: rgba(204, 204, 204, 255);
+}
+.skills-secondary .skill[data-skill="5"] span {
+  display: inline-block;
+  width: 50%;
+  padding-left: 3px;
+  background-color: rgba(255, 0, 0, 255);
+  margin: 0.3rem;
+}
+.skills-secondary .skill[data-skill="7"] {
+  background-color: rgba(204, 204, 204, 255);
+}
+.skills-secondary .skill[data-skill="7"] span {
+  display: inline-block;
+  width: 70%;
+  padding-left: 3px;
+  background-color: rgba(255, 0, 0, 255);
+  margin: 0.3rem;
+}
+/*---------Experience----------*/
+#experiences h3::after {
+  content: "";
+  position: absolute;
+  min-width: 205.5%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.39);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+.experience h4 {
+  margin-top: 1rem;
+  color: rgba(255, 0, 0, 255);
+}
+.experience-details {
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  color: rgba(177, 177, 177, 255);
+}
+.experience-details::before {
+  content: "In";
+}
+.experience-date-separator {
+  color: rgba(255, 0, 0, 255);
+}
+h4 span:first-child::after {
+  content: "@";
+  padding-left: 0.2rem;
+}
+h4 .experience-institution {
+  font-weight: 400;
+}
+/*---------Hobies----------*/
+#hobbies h3::after {
+  content: "";
+  position: absolute;
+  min-width: 205.5%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.39);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+#hobbies ul {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+/*---------Contac----------*/
+
+#contact a {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 255);
+}
+#contact dl {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+#contact dt {
+  color: white;
+  background-color: red;
+  padding-left: 0.3rem;
+}
+#contact dd {
+  color: red;
+  background-color: black;
+  padding-left: 0.3rem;
+}
+.contact-skype .contact-value {
+  color: black !important;
+}
+
+@media (max-width: 600px) {
+  .content {
+    margin: 0 2rem;
+
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.39) !important;
+  }
+
+  header div {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  figure {
+    margin: 1rem 0 1rem 0 !important;
+  }
+  #experiences h3::after {
+    display: none;
+  }
+
+  #hobbies h3::after {
+    display: none;
+  }
+  #about h3::after {
+    display: none;
+  }
+  header div {
+    margin-left: 2rem;
+  }
+  .contacts {
+    margin-top: 1rem;
+  }
+  #contact dl {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+  }
+  #contact dd {
+    color: red;
+    background-color: white;
+    padding-left: 0.3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  #contact h3 {
+    position: absolute;
+    top: -2000rem;
+  }
+  #contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 50%;
+    padding: 0;
+    padding-top: 0.5rem;
+  }
+}
